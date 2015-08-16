@@ -19,6 +19,8 @@
     "webRequest",
     "webRequestBlocking",
     "http://www.amazon.com/*",
-    "https://www.amazon.com/*"
+    "http://smile.amazon.com/*",
+    "https://www.amazon.com/*",
+    "https://smile.amazon.com/*"
   ]
 }
