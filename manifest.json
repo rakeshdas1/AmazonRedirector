@@ -16,6 +16,9 @@
     "options_page": "src/options/index.html",
     "permissions": [
     "contextMenus",
-    "http://amazon.com/*", "http://smile.amazon.com/*", "https://amazon.com/*", "https://smile.amazon.com/*", "webRequest", "webRequestBlocking", "tabs", "\u003Call_urls\u003E"
+    "webRequest",
+    "webRequestBlocking",
+    "http://www.amazon.com/*",
+    "https://www.amazon.com/*"
   ]
 }
