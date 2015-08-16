@@ -11,9 +11,9 @@
     },
     "default_locale": "en",
     "background": {
-        "scripts": ["src/bg/background.js"]
+        "scripts": ["app.js"]
     },
-    "options_page": "src/options/index.html",
+    "options_page": "options.html",
     "permissions": [
     "contextMenus",
     "webRequest",
