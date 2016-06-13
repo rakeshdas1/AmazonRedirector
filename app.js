@@ -5,9 +5,15 @@ chrome.webRequest.onBeforeRequest.addListener(function (details) {
 }, ["blocking"]);
 
 function detectRedirect(details) {
-    if (!!details.url.match('http://www.amazon.com') || !!details.url.match('amazon.com')) {
+
+  var url = details.url;
+  var http = "http://";
+  var https = "https://";
+  var amazonurl = "www.amazon.com";
+
+    if (url.match(http + amazonurl) != null || url.match(amazonurl) || url.match(https + amazonurl) ) {
             return {
-                redirectUrl: 'http://smile.amazon.com/?_encoding=UTF8&camp=1789&creative=390957&linkCode=ur2&tag=linustechtips-20'
+                redirectUrl: 'https://smile.amazon.com/?_encoding=UTF8&camp=1789&creative=390957&linkCode=ur2&tag=linustechtips-20'
             };
         };
 }
