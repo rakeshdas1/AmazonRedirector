@@ -13,7 +13,13 @@
     "background": {
         "scripts": ["app.js"]
     },
-    "options_page": "options.html",
+
+    "options_ui":
+      {
+        "page": "options.html",
+        "chrome_style": true
+
+      },
     "permissions": [
     "contextMenus",
     "webRequest",

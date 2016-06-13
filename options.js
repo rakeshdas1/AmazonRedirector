@@ -4,16 +4,15 @@ function submitBtn() {
     document.getElementById('links').value = linksEntered;
 
 
+
+
     chrome.storage.sync.set({
             links: linksEntered
         },
         function () {
             var status = document.getElementById('status');
-            status.textContent = 'Links entered were: ' + linksEntered;
+            status.textContent = 'Links successfully entered!'
         });
 
 }
 document.getElementById('submitBtn').addEventListener('click', submitBtn);
-
-
-
